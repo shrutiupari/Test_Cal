@@ -1,0 +1,20 @@
+.symbol {
+  width: 30px;
+}
+
+.card {
+  transition: height 0.5s ease-in-out;
+  will-change: height;
+}
+
+.result-container {
+  .result-value {
+    background: #fff;
+    max-height: 44px;
+    color: var(--primary-dark);
+    padding: 6px 32px;
+    border-radius: 32px;
+    font-size: 1.3em;
+    caret-color: var(--brand-color-dark);
+  }
+}

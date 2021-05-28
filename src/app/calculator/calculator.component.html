@@ -1,0 +1,41 @@
+<div class="layout-column align-items-center">
+
+  <h4 data-test-id="total-operations" class="pt-50">Total operations performed: </h4>
+  <div class="card">
+    <section class="card-text">
+      <div class="layout-row justify-content-around align-items-center mt-40">
+        <input type="number" class="ml-3 mr-3" data-test-id="app-input1" autocomplete="off" placeholder="Eg: 1"
+               name="input1"/>
+
+        <label class="ml-2 mr-2 symbol text-center" data-test-id="selected-operator"></label>
+
+        <input type="number" data-test-id="app-input2" autocomplete="off" class="ml-3 mr-3"
+               placeholder="Eg: 2"/>
+      </div>
+
+      <div class="layout-row justify-content-around mt-30">
+        <button type="submit" data-test-id="add-button"><span
+          class="operationFont">+</span></button>
+        <button type="submit" data-test-id="minus-button">
+          <span class="operationFont">-</span></button>
+        <button type="submit" data-test-id="multiply-button"><span
+          class="operationFont">*</span></button>
+        <button type="submit" data-test-id="divide-button"><span
+          class="operationFont">/</span>
+        </button>
+      </div>
+
+
+      <div class="layout-row justify-content-between align-items-center mt-30">
+        <button type="reset" class="outline danger" data-test-id="reset-button">
+          Reset
+        </button>
+        <div class="layout-row justify-content-center align-items-center result-container">
+          <h5 *ngIf="result" data-test-id="result" class="result-value ma-0 slide-up-fade-in"></h5>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>
